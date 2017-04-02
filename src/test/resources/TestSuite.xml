@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Demo Test Plan" verbose="1">
+	<parameter name="pMainPage" value="МТС. На шаг впереди"/>
+	<parameter name="btnMobilInter" value="Мобильный интернет и ТВ"/>
+	<parameter name="mobilInternPage" value="Мобильный интернет с компьютера"/>
+	<parameter name="mobilInternPhonePage" value="Мобильный интернет с телефона"/>
+	<parameter name="btnMobInterPhone" value="Мобильный интернет с телефона"/>
+	<parameter name="btnSmartBox" value="//a[text() = 'Сервис «СМАРТ-box»']"/>
+	<parameter name="smartBoxPage" value="//div[@class = 'rounds-top-left texts']/h2"/>
+	<parameter name="textMtsSmart" value="МТС СМАРТ"/>
+	<parameter name="txbText" value="//table[@class = 'data_tall new']//b"/>
+	<parameter name="txbSerch" value="q"/>
+	<parameter name="SearchPage" value="//h2[.='Поиск']"/>
+	<parameter name="numberResults" value="//a[@id= 'title']"/>
+	<parameter name="sltWhere" value="where"/>
+	<parameter name="valueSelect" value="Новости"/>
+	<parameter name="btnSearch" value="search-submit-button"/>
+	<parameter name="linkNews" value="//li/a[@id = 'title'and position()= "/>
+	<parameter name="newsPage" value="print"/>
+	<parameter name="pageThree" value="//a[.='3']"/>
+	<parameter name="btnInternShop" value="Интернет-магазин"/>
+	<parameter name="internShopPage" value="//a[@title = 'Корзина']"/>
+	<parameter name="btnMobilPhone" value="Мобильные телефоны"/>
+	<parameter name="mobilPhonePage" value="//h1"/>
+	<parameter name="ckbFirm" value="//label[.= 'Samsung']"/>
+	<parameter name="txbDiagonal" value="diagonal_ekrana__max"/>
+	<parameter name="valueDiagonal" value="5"/>
+	<parameter name="txbPrice" value="price_max"/>
+	<parameter name="valuePrice" value="800"/>
+	<parameter name="txbCamera" value="frontalnaya_kamera_max"/>
+	<parameter name="valueCamera" value="5"/>
+	<parameter name="btnAdvancedSearch" value="Расширенный фильтр"/>
+	<parameter name="btnShow" value="//input[@value = 'Показать']"/>
+	<parameter name="phonePage" value="tovar_slide_wrapper"/>
+	<parameter name="numberResultsPhone" value="//a[@class = 'catalog_tovar_photo']"/>
+	<parameter name="txbFirmPhone" value="//td[normalize-space(.) = 'Бренд:']/following-sibling::td"/>
+	<parameter name="valueFirm" value="Samsung"/>
+	<parameter name="txbPricePhone" value="//div[@data-tab = 'tab-price' and position() = 1]/p[@class = 'gray']/span[@class = 'gray_pay']"/>
+	<parameter name="txbDiagonalPhone" value="//td[normalize-space(.) = 'Диагональ экрана:']/following-sibling::td"/>
+	<parameter name="txbCameraPhone" value="//td[normalize-space(.) = 'Фронтальная камера:']/following-sibling::td"/>
+	<parameter name="btnAddToBasket" value="//article[position()=1]//span[@title = 'Добавить в корзину']"/>
+	<parameter name="btnBasket" value="//a[@title = 'Корзина']"/>
+	<parameter name="basketPage" value="//h1"/>
+	<parameter name="txbSumTotal" value="//form[@name = 'basket']"/>
+	<parameter name="compareFirst" value="//article[position() = 1]//span[@title = 'Добавить к сравнению']"/>
+	<parameter name="compareSecond" value="//article[position() = 2]//span[@title = 'Добавить к сравнению']"/>
+	<parameter name="btnCompare" value="//a[@title = 'Сравнение']"/>
+	<parameter name="comparePage" value="//h1"/>
+	<parameter name="btnHide" value="Скрыть равные параметры"/>
+	<parameter name="lblComparePriceFirst" value="//th[contains(.,'Цена:')]/following-sibling::td[@data-number = '1']"/>
+	<parameter name="lblComparePriceSecond" value="//th[contains(.,'Цена:')]/following-sibling::td[@data-number = '2']"/>
+	<parameter name="lblCompareDiagonalFirst" value="//th[contains(.,'Диагональ экрана:')]/following-sibling::td[@data-number = '1']"/>
+	<parameter name="lblCompareDiagonalSecond" value="//th[contains(.,'Диагональ экрана:')]/following-sibling::td[@data-number = '2']"/>
+	<test name="Compate test" preserve-order="true">
+		<classes>
+			<class name="demo.tests.CompareTest" />
+		</classes>
+	</test>
+	<test name="Basket test" preserve-order="true">
+		<classes>
+			<class name="demo.tests.BasketTest" />
+		</classes>
+	</test>
+	<test name="Filter test" preserve-order="true">
+		<classes>
+			<class name="demo.tests.FilterTest" />
+		</classes>
+	</test>
+	<test name="Servis Smart-Box" preserve-order="true">
+		<classes>
+ 			<class name="demo.tests.ServisCmartBoxTest" />
+        </classes>
+	</test>
+	<test name="Search Test" preserve-order="true">
+		<classes>
+			<class name="demo.tests.SearchTest" />
+		</classes>
+	</test>
+</suite>
