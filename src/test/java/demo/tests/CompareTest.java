@@ -17,8 +17,10 @@ public class CompareTest extends BaseTest {
             getBrowser().getDriver().switchTo().window(handle);
         }
         InternShopPage internShopPage = new InternShopPage(getInternShopPage());
-        internShopPage.addCompare(getCompareSecond());
+
         internShopPage.addCompare(getCompareFirst());
+        getBrowser().waitForPageToLoad();
+        internShopPage.addCompare(getCompareSecond());
 
 
         logStep();
