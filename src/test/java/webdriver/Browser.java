@@ -127,7 +127,7 @@ public final class Browser {
      * wait the download page (on Javascript readyState)
      */
     public void waitForPageToLoad() {
-         Logger.getInstance().info("waitForPageToLoad started");
+        // Logger.getInstance().info("waitForPageToLoad started");
         WebDriverWait wait = new WebDriverWait(driver, Long.parseLong(getTimeoutForPageLoad()));
 
         try {
@@ -145,7 +145,7 @@ public final class Browser {
         } catch (Exception e) {
             Logger.getInstance().warn(getLoc("loc.browser.page.timeout"));
         }
-         Logger.getInstance().info("waitForPageToLoad ended");
+        // Logger.getInstance().info("waitForPageToLoad ended");
     }
 
     /**
